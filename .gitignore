@@ -31,3 +31,6 @@ _ReSharper*/
 #Nuget packages folder
 packages/
 /MyMavenWeb/target/
+__pycache__
+*.pyd
+/test/pp/cpp/helloWorld.dll
