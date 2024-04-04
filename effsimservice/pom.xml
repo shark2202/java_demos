@@ -16,7 +16,7 @@
 
 	<properties>
 		<java.version>17</java.version>
-		<os.detected.classifier>windows-x86_64</os.detected.classifier>
+<!--		<os.detected.classifier>windows-x86_64</os.detected.classifier>-->
 		<grpc.version>1.26.0</grpc.version>
 		<protobuf.version>3.11.0</protobuf.version>
 	</properties>
@@ -75,6 +75,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			
 			<!--Probuff工具-->
 			<plugin>
 				<groupId>org.xolstice.maven.plugins</groupId>
@@ -113,8 +114,15 @@
 					<source>17</source>
 					<target>17</target>
 				</configuration>
-			</plugin>
-		</plugins>
+			</plugin></plugins>
+			        <extensions>
+            <extension>
+                <groupId>kr.motd.maven</groupId>
+                <artifactId>os-maven-plugin</artifactId>
+                <version>1.7.1</version>
+            </extension>
+        </extensions>
+		
 	</build>
 
 	<!-- ((只有当你使用 milestone 或 snapshot 版本时，你才需要这个。)) -->
